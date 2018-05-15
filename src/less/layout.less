@@ -1,0 +1,183 @@
+// Элементы сетки, позиционирование, floatы, в общем все что связано с расположением элементов на странице
+
+.header {
+
+	&__top {
+		.row-flex();
+		justify-content: space-between;
+		padding-top: 40px;
+	}
+
+	&__title {
+		margin-top: 280px;
+		.md(margin-top, 280px);
+		.sm(margin-top, 200px);
+		.xs(margin-top, 80px);
+
+		&-small {
+			margin-bottom: 30px;
+		}
+	}
+
+	&__btn {
+		margin: 0 auto;
+		margin-top: 80px;
+	}
+
+}
+
+	/* ======================== Section Services ======================= */
+
+.services {
+	margin: 100px 0;
+
+	&__title {
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		text-align: center;
+	}
+}
+
+.servicesItems {
+	margin: 50px 0;
+	.row-flex();
+	justify-content: center;
+}
+
+.servicesItem {
+	.col();
+	.size(4);
+	.size-md(10);
+	.size-xs(12);
+	
+	text-align: center;
+	margin-bottom: 50px;
+
+	max-width: 450px;
+	
+	&__title {
+		margin: 20px 0;	
+	}
+}
+
+
+
+/* ======================== Section Portfolio ======================= */
+
+.portfolio {
+
+	&__title {
+		padding-top: 100px;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		text-align: center;
+
+	}
+}
+
+.portfolioItems {
+	.row-flex();
+	justify-content: center;
+	.md(text-align, center);
+
+	margin-top: 50px;
+	padding-bottom: 100px;
+}
+
+.portfolioItem {
+	.col();
+	.size(4);
+	.size-md(12);
+	margin-bottom: 20px;
+}
+
+
+/* ======================== Section About ======================= */
+
+.about {
+	// margin: 100px 0;
+
+	&__title {
+		padding-top: 100px;
+		margin-bottom: 10px;
+	}
+
+	&__text {
+		text-align: center;
+	}
+}
+
+
+.aboutItems {
+	display: flex;
+	flex-direction: column;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	
+
+	.aboutItem:nth-child(2){ 
+		margin-left: 335px;
+		.md(margin-left, 80px);
+		.sm(margin-left, 0px);
+
+
+
+		&:nth-child(2) .aboutItem__left {
+			text-align: left;
+			margin-left: 10px;
+			.sm(margin-left, 0px);
+			.xs(text-align, center);
+		}
+	}
+
+	.aboutItem:nth-child(4){ 
+		margin-left: 335px;
+		.md(margin-left, 80px);
+		.sm(margin-left, 0px);
+
+
+		&:nth-child(4) .aboutItem__left {
+			text-align: left;
+			margin-left: 10px;
+			.sm(margin-left, 0px);
+			.xs(text-align, center);
+		}
+	}
+	
+}
+
+.aboutItem {
+	.row-flex();
+	margin-bottom: 50px;
+	// .md(display, block);
+
+	&__left {
+		text-align: right;
+		.xs(text-align, center);
+
+
+		.aboutItem__title {
+			margin-bottom: 10px;
+		}
+
+	}
+
+	&__right {
+		margin: 0 20px 0 40px;
+		.sm(margin-left, 10px);
+		.xs(margin,0 auto);
+
+	}
+}
+
+
+/* ========================== Footer ======================= */
+
+.footer {
+	text-align: center;
+	margin-bottom: 100px;
+}

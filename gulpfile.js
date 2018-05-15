@@ -22,7 +22,7 @@ gulp.task('build', function () {
 			.pipe(less())
 			.pipe(gcmq())
 			.pipe(autoprefixer({
-				browsers ['> 0.1%'],
+				browsers: ['> 0.1%'],
 				cascade: false
 			}))
 			.pipe(cleanCSS({
@@ -47,12 +47,13 @@ gulp.task('browserSync', function () {
 	});
 });
 
+
 const smartgrid = require('smart-grid');
 
 gulp.task('grid', function(){
 	smartgrid('src/less', {
 		container: {
-			maxWidth: '1270px'
+			maxWidth: '970px'
 		}
 	});
 });
